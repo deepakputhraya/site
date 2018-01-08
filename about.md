@@ -5,4 +5,8 @@ subtitle: Just who the hell you think I am?
 permalink: /about/
 ---
 
-I am a Software Engineer and currently working as Senior Software Engineer at Playment. I graduated from NITK with a Computer Science degree.
+I am an engineer at Playment where I help design, build, run our API and maintain our crowd-sourcing platform. I have helped setup and manage Playment's Infrastructure, setup CI/CD so that developers spend as little time on worrying about maintaining infrastructure.
+I'm a strong believer that developers shouldn't be spending too much time thinking about infrastructure.
+
+Having written software professionally on nodeJS, Python and Java, I have little doubt that powerfully type-safe languages which expose more problems at compile time are the future.
+These days I'm especially interested in ways to improve the robustness and longevity of software, and reduce toil in operating it.
