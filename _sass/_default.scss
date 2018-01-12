@@ -5,7 +5,7 @@
 }
 /* =Base */
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Lato', sans-serif;
     color: $iron;
     background-color: white;
 }
@@ -30,9 +30,8 @@ img {
     display: block;
     max-width: 100%;
 }
-
-h1, h2, h3, h4 {
-    font-family: 'Lato', sans-serif;
+h1 {
+    font-size: 2em;
 }
 
 blockquote {
@@ -86,7 +85,7 @@ strong {
 }
 
 .logo {
-    font-size: 50px;
+    font-size: 2em;
     font-weight: 200;
     color: $iron;
     display: block;
@@ -135,25 +134,25 @@ strong {
 
 .page-title__text {
     font-weight: 100;
-    font-size: 70px;
+    font-size: 1em;
 }
 
 .page-title__subtitle {
     font-weight: 100;
-    font-size: 22px;
+    font-size: 0.5em;
     color: $cloudy;
 }
 
 .post-title {
-    margin-bottom: 40px;
+    margin-bottom: 1em;
 }
 
 .post-title__text {
-    font-size: 40px;
+    font-size: 1em;
 }
 
 .post-title__subtitle {
-    font-size: 20px;
+    font-size: 0.5em;
 }
 
 /* =Post teasers */
@@ -169,19 +168,19 @@ strong {
 }
 
 .post-teaser__title {
-    font-size: 22px;
+    font-size: 1em;
     color: $iron;
 }
 
 .post-teaser__date {
-    font-size: 16px;
+    font-size: 1em;
     float: right;
     vertical-align: middle;
     color: $cloudy;
 }
 
 .empty-post-list {
-    font-size: 22px;
+    font-size: 1em;
     font-weight: 100;
     color: $iron;
     text-align: center;

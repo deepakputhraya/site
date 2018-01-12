@@ -8,26 +8,28 @@ categories: [database]
 
 Taking backups is an important administrative task that can have some disastrous consequences if it is not done right. The use of RAID configurations in your storage system, replication between nodes, clustering and trusting 100% that your SAN(storage are network) will be up ARE NOT backup strategies. These measures are necessary for HA(High availability) but do not replace the necessity of taking backups of our databases.
 
-There are two different types of backup that can be used with PostgreSQL to implement a good backup and restore strategy
+There are two different types of backup that can be used with PostgreSQL to implement a good backup and restore strategy.
 
-## Logical backups
+### Logical backups
 
 They take a snapshot of a database at a given moment.
 
-#### Backup individual databases or all databases
-Backup just the schemas, just the data, individual tables, or the whole database (schemas and data)
-Create the backup file in proprietary binary format or plain SQL script
-Can be restored using the pg\_restore utility which also ships with PostgreSQL
-Does not offer point-in-time recovery (PITR)
-Physical backups:
+- Backup individual databases or all databases
+- Backup just the schemas, just the data, individual tables, or the whole database (schemas and data)
+- Create the backup file in proprietary binary format or plain SQL script
+- Can be restored using the pg\_restore utility which also ships with PostgreSQL
+- Does not offer point-in-time recovery (PITR)
+
+### Physical backups
 
 This type of backup takes copies of the files where the PostgreSQL saves the databases.
 
-#### Offer point-in-time recovery
-Backup the contents of the PostgreSQL data directory and the WAL (Write Ahead Log) files
-Take larger amounts of disk space
-Use the PostgreSQL pg\_start\_backup and pg\_stop\_backup commands. However, these commands need to be scripted, which makes physical backups a more complex process
-Do not back up individual databases, schemas only, etc. It’s an all-or-nothing approach
+- Offer point-in-time recovery
+- Backup the contents of the PostgreSQL data directory and the WAL (Write Ahead Log) files
+- Take larger amounts of disk space
+- Use the PostgreSQL pg\_start\_backup and pg\_stop\_backup commands. However, these commands need to be scripted, which makes physical backups a more complex process
+- Do not back up individual databases, schemas only, etc. It’s an all-or-nothing approach
+
 PITR is a good strategy when High availability is not the major reason behind your database backup. If you cannot afford to loose almost zero data and can afford to have some downtime, then PITR is the approach for you. We will be looking at how we can setup a PITR recovery backup for a Postgresql instance using Barman.
 
 We will be testing this on a Ubuntu machine with PostgreSQL 9.6 and Barman 2.1. We will need using three Virtual machines one that would be the database that needs to be backed up, the other machine is where Barman will be installed, and backed-up data would be sitting and the last machine we will be using to restore the database to. I will assume that you already have the database up to get started, if you do not you can create a Postgresql 9.6 database and continue forward.
@@ -226,21 +228,21 @@ We can recover to a particular time stamp by providing the — target-time �
 ## Debugging:
 In case you get stuck
 
-#### List of slots in Postgresql
+### List of slots in Postgresql
 
 ```
 select * from pg\_replication\_slots;
 ```
 To know what each slot means you can read the Postgresql documentation.
 
-#### To delete slots in Postgresql
+### To delete slots in Postgresql
 
 ```
 select pg\_drop\_replication\_slot('pg');
 ```
 In the above command pg is the slot name.
 
-#### Creating scripts to send a mail
+### Creating scripts to send a mail
 
 In case you want to receive a mail whenever a base backup gets completed you can write a small script that would send you the mail and this can be triggered via the hook scripts configuration. In the pg.conf of barman add this line:
 
