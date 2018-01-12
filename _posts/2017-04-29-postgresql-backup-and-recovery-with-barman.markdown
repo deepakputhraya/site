@@ -137,6 +137,7 @@ Note that in the above setting **host=10.0.2.2** is the host address of the Post
 
 reuse_backup: We specify if the database should take a complete backup of the database or just copy on the changed files. If we link then we can save a lot of disk space locally(about 50%)
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/pgbarman?src=hash&amp;ref_src=twsrc%5Etfw">#pgbarman</a> <a href="https://twitter.com/hashtag/postgresql?src=hash&amp;ref_src=twsrc%5Etfw">#postgresql</a> <a href="https://twitter.com/hashtag/IncrementalBackup?src=hash&amp;ref_src=twsrc%5Etfw">#IncrementalBackup</a> <a href="https://twitter.com/hashtag/database?src=hash&amp;ref_src=twsrc%5Etfw">#database</a> size: 13.2 TB. Actual size on disk: 5.0 TB (-62.01% <a href="https://twitter.com/hashtag/deduplication?src=hash&amp;ref_src=twsrc%5Etfw">#deduplication</a> ratio). Saved 8.2TB!</p>&mdash; Gabriele Bartolini (@_GBartolini_) <a href="https://twitter.com/_GBartolini_/status/557287789575028736?ref_src=twsrc%5Etfw">January 19, 2015</a></blockquote>
 
 We will need to configure the database: We will need the *INCOMING\_WALS\_DIRECTORY* on the barman machine for the server, to get this run:
 
