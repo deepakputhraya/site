@@ -17,7 +17,7 @@ They take a snapshot of a database at a given moment.
 - Backup individual databases or all databases
 - Backup just the schemas, just the data, individual tables, or the whole database (schemas and data)
 - Create the backup file in proprietary binary format or plain SQL script
-- Can be restored using the pg\_restore utility which also ships with PostgreSQL
+- Can be restored using the pg_restore utility which also ships with PostgreSQL
 - Does not offer point-in-time recovery (PITR)
 
 ### Physical backups
@@ -27,7 +27,7 @@ This type of backup takes copies of the files where the PostgreSQL saves the dat
 - Offer point-in-time recovery
 - Backup the contents of the PostgreSQL data directory and the WAL (Write Ahead Log) files
 - Take larger amounts of disk space
-- Use the PostgreSQL pg\_start\_backup and pg\_stop\_backup commands. However, these commands need to be scripted, which makes physical backups a more complex process
+- Use the PostgreSQL pg_start_backup and pg_stop_backup commands. However, these commands need to be scripted, which makes physical backups a more complex process
 - Do not back up individual databases, schemas only, etc. It’s an all-or-nothing approach
 
 PITR is a good strategy when High availability is not the major reason behind your database backup. If you cannot afford to loose almost zero data and can afford to have some downtime, then PITR is the approach for you. We will be looking at how we can setup a PITR recovery backup for a Postgresql instance using Barman.
@@ -40,7 +40,7 @@ Create a new machine to install, run and manage backups. Let’s call this *barm
 On the barman machine install Barman
 
 ```
-sudo sh -c ‘echo “deb http://apt.postgresql.org/pub/repos/apt/$(lsb_release -cs)-pgdg main” > /etc/apt/sources.list.d/pgdg.list’
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 sudo apt-get update
 sudo apt-get install barman
 ```
@@ -58,7 +58,7 @@ On Barman as barman user:
 ```
 ssh-keygen
 ```
-Press enter for all the subsequent entries. Copy the contents on ~/.ssh/id\_rsa.pub
+Press enter for all the subsequent entries. Copy the contents on ~/.ssh/id_rsa.pub
 
 On the Database machine, switch to the Postgres user and copy the ssh key of the barman into ~/.ssh/authorized_keys
 
@@ -139,16 +139,17 @@ reuse_backup: We specify if the database should take a complete backup of the da
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/pgbarman?src=hash&amp;ref_src=twsrc%5Etfw">#pgbarman</a> <a href="https://twitter.com/hashtag/postgresql?src=hash&amp;ref_src=twsrc%5Etfw">#postgresql</a> <a href="https://twitter.com/hashtag/IncrementalBackup?src=hash&amp;ref_src=twsrc%5Etfw">#IncrementalBackup</a> <a href="https://twitter.com/hashtag/database?src=hash&amp;ref_src=twsrc%5Etfw">#database</a> size: 13.2 TB. Actual size on disk: 5.0 TB (-62.01% <a href="https://twitter.com/hashtag/deduplication?src=hash&amp;ref_src=twsrc%5Etfw">#deduplication</a> ratio). Saved 8.2TB!</p>&mdash; Gabriele Bartolini (@_GBartolini_) <a href="https://twitter.com/_GBartolini_/status/557287789575028736?ref_src=twsrc%5Etfw">January 19, 2015</a></blockquote>
 
-We will need to configure the database: We will need the *INCOMING\_WALS\_DIRECTORY* on the barman machine for the server, to get this run:
-
-barman show-server pg |grep incoming\_wals\_directory
-In the pg\_hba.conf of the database make an entry to allow Barman access the database:
+We will need to configure the database: We will need the *INCOMING_WALS_DIRECTORY* on the barman machine for the server, to get this run:
+```
+barman show-server pg |grep incoming_wals_directory
+```
+In the pg_hba.conf of the database make an entry to allow Barman access the database:
 
 ```
 host         all          all         <barman ip>/32           trust
 ```
 
-Make an entry for ‘replication’ or ‘all’ in pg\_hba.conf file. We will also need to make changes in the postgres.conf file:
+Make an entry for ‘replication’ or ‘all’ in pg_hba.conf file. We will also need to make changes in the postgres.conf file:
 
 ```
 listen_addresses = '*'
@@ -161,7 +162,7 @@ max_replication_slots = 2
 
 Restart the Postgresql instance.
 
-***NOTE: max\_wal\_senders and max\_replication_slots are just examples.***
+***NOTE: max_wal_senders and max_replication_slots are just examples.***
 
 On barman once all the configurations are done:
 
@@ -232,14 +233,14 @@ In case you get stuck
 ### List of slots in Postgresql
 
 ```
-select * from pg\_replication\_slots;
+select * from pg_replication_slots;
 ```
 To know what each slot means you can read the Postgresql documentation.
 
 ### To delete slots in Postgresql
 
 ```
-select pg\_drop\_replication\_slot('pg');
+select pg_drop_replication_slot('pg');
 ```
 In the above command pg is the slot name.
 
