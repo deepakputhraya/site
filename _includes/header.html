@@ -1,4 +1,9 @@
 <header class="header">
+    <script type="text/javascript">
+        var host = "deepak.puthraya.com";
+        if ((host == window.location.host) && (window.location.protocol != "https:"))
+            window.location.protocol = "https";
+    </script>
     <div class="navigation">
         <a href="/" class="logo">{{ site.title }}</a>
 
@@ -10,15 +15,15 @@
 
     <ul class="social-links">
         {% if site.author.github %}
-            <a href="https://github.com/{{ site.author.github }}" class="social-links__entry" target="_blank">
-                <i class="fa fa-github"></i>
-            </a>
+        <a href="https://github.com/{{ site.author.github }}" class="social-links__entry" target="_blank">
+            <i class="fa fa-github"></i>
+        </a>
         {% endif %}
 
         {% if site.author.twitter %}
-            <a href="https://twitter.com/{{ site.author.twitter }}" class="social-links__entry" target="_blank">
-                <i class="fa fa-twitter"></i>
-            </a>
+        <a href="https://twitter.com/{{ site.author.twitter }}" class="social-links__entry" target="_blank">
+            <i class="fa fa-twitter"></i>
+        </a>
         {% endif %}
     </ul>
 </header>

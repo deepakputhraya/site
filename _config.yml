@@ -5,6 +5,7 @@ description: >
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://deepak.puthraya.com" # the base hostname & protocol for your site
+enforce_ssl: deepak.puthraya.com   # without any protocol
 
 author:
   fullname: 'Deepak Puthraya'
