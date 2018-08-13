@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Technical Debt is Okay"
+title:  "Say Yes to Technical Debt"
 subtitle: "Good & Bad Technical Debt"
 date: 2018-07-28 02:06:35
 categories: [code]
