@@ -17,6 +17,11 @@ body {
   font-family: 'Aller Regular', Menlo, Courier, monospace, sans-serif;
 }
 
+img + em {
+  display: block;
+  text-align: center;
+}
+
 .twitter-tweet {
   margin: auto;
   padding-top: 15px;
