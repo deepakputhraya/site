@@ -107,10 +107,10 @@ blockquote {
     color: $cloudy;
     font-weight: 300;
     &:before {
-      content: "“ ";
+      content: "";
     }
     &:after {
-      content: " ”";
+      content: "";
     }
   }
 }

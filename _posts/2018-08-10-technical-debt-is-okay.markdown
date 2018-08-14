@@ -2,7 +2,7 @@
 layout: post
 title:  "Say Yes to Technical Debt"
 subtitle: "Good & Bad Technical Debt"
-date: 2018-07-28 02:06:35
+date: 2018-08-10 02:06:35
 categories: [code]
 ---
 
@@ -22,5 +22,12 @@ The code was left untouched for over 6 months till we decided to extend the feat
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Technical debt is bad, but (more often than not) optimal.</p>&mdash; Paul Graham (@paulg) <a href="https://twitter.com/paulg/status/855342574063800320?ref_src=twsrc%5Etfw">April 21, 2017</a></blockquote>
 
 As developers, we are quick to attacking a problem & trying to find the right approach. We try to cover cases that would likely not arise or if they do they probably far out in the future. At least, this is the truth for most startups. Sure that database query would break if there were 1M entries users, But we probably need to make lot more features so that we can reach that 1M mark.
+
+Tech debt stinks, it slows down development & creates quality issues. It can have a negative impact when scaling up. Refactoring code to reduce tech debt is painful & resource distraction.
+
+At Playment, lead-engineers try to keep a track of tech debt, classify easy fixes to fundamental architecture design flaws. A small percentage of engineering effort goes into lessening tech debt every release. We strive to set expectations that refactoring is part of our job, showcasing excellent refactoring(eg: small demo of the code). At times its fun & feels great after removing large amount dead code.
+
+> Tech debt is often a "damned if you do, damned if you don't" problem.
+> <br><b>\- Survival to Thrival </b>
 
 There is a time and a place to reduce technical debt, but it’s not as crucial as most engineers think.
