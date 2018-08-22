@@ -1,10 +1,4 @@
 @font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  src: url('../assets/vendor/lato/Lato-Light.woff') format('woff2'), url('../assets/vendor/lato/Lato-Light.eot'), url('../assets/vendor/lato/Lato-Light.eot?#iefix') format('embedded-opentype'), url('../assets/vendor/lato/Lato-Light.ttf') format('truetype'), url('../assets/vendor/lato/Lato-Light.svg#latolight') format('svg');
-}
-
-@font-face {
   font-family: 'Aller Regular';
   font-style: normal;
   src: url('../assets/vendor/Aller/Aller_Lt.ttf') format('truetype');
@@ -20,7 +14,26 @@
 body {
   background-color: white;
   color: $iron;
-  font-family: 'Aller Regular', "Liberation Mono", Menlo, Courier, monospace, 'Lato', sans-serif;
+  font-family: 'Aller Regular', Menlo, Courier, monospace, sans-serif;
+}
+
+img + em {
+  display: block;
+  text-align: center;
+}
+
+.twitter-tweet {
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+h1, h2, h3, p, li {
+  opacity: 1;
+  visibility: visible; /* Old IE */
+  -webkit-transition: opacity 0.24s ease-in-out;
+  -moz-transition: opacity 0.24s ease-in-out;
+  transition: opacity 0.24s ease-in-out;
 }
 
 a {
@@ -50,19 +63,19 @@ img {
 }
 
 h1 {
-  font-family: 'Aller Bolder', "Liberation Mono", Menlo, Courier, monospace, 'Lato', sans-serif;
+  font-family: 'Aller Bolder', Menlo, Courier, monospace, sans-serif;
   font-size: 3em;
   font-weight: bolder;
 }
 
 h2 {
-  font-family: 'Aller Bolder', "Liberation Mono", Menlo, Courier, monospace, 'Lato', sans-serif;
+  font-family: 'Aller Bolder', Menlo, Courier, monospace, sans-serif;
   font-size: 1.5em;
   font-weight: bolder;
 }
 
 h2 {
-  font-family: 'Aller Bolder', "Liberation Mono", Menlo, Courier, monospace, 'Lato', sans-serif;
+  font-family: 'Aller Bolder', Menlo, Courier, monospace, sans-serif;
   font-size: 1.2em;
   font-weight: bolder;
 }
@@ -99,10 +112,10 @@ blockquote {
     color: $cloudy;
     font-weight: 300;
     &:before {
-      content: "“ ";
+      content: "";
     }
     &:after {
-      content: " ”";
+      content: "";
     }
   }
 }
