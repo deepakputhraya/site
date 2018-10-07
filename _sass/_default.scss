@@ -14,7 +14,7 @@
 body {
   background-color: white;
   color: $iron;
-  font-family: 'Aller Regular', Menlo, Courier, monospace, sans-serif;
+  font-family: 'Aller Regular', sans-serif;
 }
 
 img + em {
@@ -63,19 +63,19 @@ img {
 }
 
 h1 {
-  font-family: 'Aller Bolder', Menlo, Courier, monospace, sans-serif;
+  font-family: 'Aller Bolder', sans-serif;
   font-size: 3em;
   font-weight: bolder;
 }
 
 h2 {
-  font-family: 'Aller Bolder', Menlo, Courier, monospace, sans-serif;
+  font-family: 'Aller Bolder', sans-serif;
   font-size: 1.5em;
   font-weight: bolder;
 }
 
 h2 {
-  font-family: 'Aller Bolder', Menlo, Courier, monospace, sans-serif;
+  font-family: 'Aller Bolder', sans-serif;
   font-size: 1.2em;
   font-weight: bolder;
 }
@@ -412,4 +412,10 @@ note-title {
     color: #303030;
     text-decoration: none;
   }
+}
+
+.readmore {
+  border-bottom: 1px solid #303030;
+  color: #303030;
+  text-decoration: none;
 }
