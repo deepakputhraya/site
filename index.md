@@ -12,7 +12,10 @@ sitemap:
                     {{ post.title }}
                      <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
                 </h3>
-                <!-- <span class="post-teaser__subtitle">{{ post.subtitle }}</span> -->
+                 <span class="post-teaser__subtitle">
+                    {{ post.content | strip_html | truncatewords:30}}<br>
+                    <a href="{{ post.url }}">Read more...</a><br><br>
+                 </span>
             </a>
         </li>
     {% endfor %}

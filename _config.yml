@@ -8,6 +8,11 @@ url: "https://deepak.puthraya.com" # the base hostname & protocol for your site
 enforce_ssl: deepak.puthraya.com   # without any protocol
 future: true
 
+collections:
+  notes:
+      output: true
+      permalink: /notes/:path/
+
 author:
   fullname: 'Deepak Puthraya'
   googleplus: https://www.google.com/+deepakputhraya
