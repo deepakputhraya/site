@@ -41,7 +41,10 @@ sitemap:
         </div>
         <div id="photo">
             {% assign artwork = site.data.artwork | reverse | first %}
-            <img src="{{ artwork.url }}"/>
+            <figure>
+                <img src="{{ artwork.url}}">
+                <figcaption>{{ artwork.title }}</figcaption>
+            </figure>
         </div>
     </div>
 </div>

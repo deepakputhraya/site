@@ -508,7 +508,13 @@ div#columns small a {
   width: 60%;
 }
 
-#photo img {
+#photo figure figcaption {
+  font-size: .9rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#photo figure img {
   height: auto;
   margin: 10px auto;
   max-width: 100%;
