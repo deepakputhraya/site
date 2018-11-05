@@ -179,6 +179,12 @@ strong {
   margin-left: 10px;
 }
 
+.menu-selected {
+  border-bottom: 1px solid #303030;
+  color: #303030;
+  text-decoration: none;
+}
+
 /* =Titles */
 .page-title {
   margin-top: 50px;
@@ -209,7 +215,7 @@ strong {
   font-size: 0.5em;
 }
 
-  /* =Post teasers */
+/* =Post teasers */
 
 .list-posts {
   list-style-type: none;
@@ -419,3 +425,121 @@ note-title {
   color: #303030;
   text-decoration: none;
 }
+
+/*artwork*/
+#columns {
+  column-gap: 15px;
+  margin: auto;
+  width: 90%;
+}
+
+div#columns figure {
+  background: #fefefe;
+  column-break-inside: avoid;
+  display: inline-block;
+  transition: opacity .4s ease-in-out;
+}
+
+div#columns figure img {
+  height: auto;
+  margin: 10px auto;
+  max-height: 500px;
+  width: auto;
+}
+
+div#columns figure figcaption {
+  color: #444;
+  font-size: .9rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+div#columns small {
+  color: #aaa;
+  float: right;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+div#columns small a {
+  color: #666;
+  text-decoration: none;
+  transition: .4s color;
+}
+
+@media screen and (max-width: 750px) {
+  #columns {
+    column-gap: 0px;
+  }
+  #columns figure {
+    width: 100%;
+  }
+}
+
+/*Home*/
+
+#home {
+  margin: 50px 50px;
+}
+
+.flexcontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+#flexcontainer-index {
+  font-size: 1rem;
+  justify-content: center;
+  line-height: 1.7em;
+  margin: 50px auto;
+  //max-width: 1920px;
+}
+
+#text {
+  flex-shrink: 1;
+  width: 30%;
+}
+
+#photo {
+  //float: right;
+  flex-shrink: 3;
+  overflow: no-display;
+  margin-left: 30px;
+  width: 60%;
+}
+
+#photo figure figcaption {
+  font-size: .9rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#photo figure img {
+  height: auto;
+  margin: 10px auto;
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  #photo {
+    height: auto;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 900px) {
+  #text {
+    width: 100%;
+  }
+
+  #flexcontainer-index #photo {
+    margin: 0;
+    max-width: 100%;
+    overflow: auto;
+  }
+
+  #photo {
+    display: none;
+  }
+}
+

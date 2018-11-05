@@ -8,10 +8,17 @@ url: "https://deepak.puthraya.com" # the base hostname & protocol for your site
 enforce_ssl: deepak.puthraya.com   # without any protocol
 future: true
 
+permalink: /:year/:month/:day/:title:output_ext
+
 collections:
   notes:
       output: true
       permalink: /notes/:path/
+  blogs:
+      output: true
+      permalink: /:path/
+  drawings:
+      output: true
 
 author:
   fullname: 'Deepak Puthraya'

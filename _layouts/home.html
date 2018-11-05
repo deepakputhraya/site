@@ -8,9 +8,18 @@
 </head>
 
 <body>
+<div class="wrapper">
+    {% assign selected = 'home' %}
+    {% include header.html %}
+</div>
+
+{% include page/title.html %}
 {{ content }}
+
 {% include externals/scripting.html %}
 {% include externals/google_analytics.html %}
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
+
+<!--{% include page/explore.html %}-->

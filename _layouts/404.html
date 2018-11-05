@@ -7,10 +7,17 @@
     {% include externals/styling.html %}
 </head>
 
-<body>
+<body style="background-color: black">
+<div class="wrapper">
+    {% include header.html %}
+</div>
+
 {{ content }}
+
 {% include externals/scripting.html %}
 {% include externals/google_analytics.html %}
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
+
+<!--{% include page/explore.html %}-->
