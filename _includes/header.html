@@ -6,11 +6,23 @@
     </script>
     <div class="navigation">
         <ul class="menu">
-            <li class="menu__entry"><a href="{{ '/' | prepend: site.baseurl }}">Home</a></li>
-            <li class="menu__entry"><a href="{{ '/articles' | prepend: site.baseurl }}">Articles</a></li>
-            <li class="menu__entry"><a href="{{ '/notes' | prepend: site.baseurl }}">Notes</a></li>
-            <li class="menu__entry"><a href="{{ '/drawings' | prepend: site.baseurl }}">Drawings</a></li>
-            <li class="menu__entry"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+            <li {% if selected=="home" %} class="menu__entry menu-selected" {% else %} class="menu__entry" {% endif %}>
+                <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
+            </li>
+            <li {% if selected=="articles" %} class="menu__entry menu-selected" {% else %} class="menu__entry" {% endif
+                %}>
+                <a href="{{ '/articles' | prepend: site.baseurl }}">Articles</a>
+            </li>
+            <li {% if selected=="notes" %} class="menu__entry menu-selected" {% else %} class="menu__entry" {% endif %}>
+                <a href="{{ '/notes' | prepend: site.baseurl }}">Notes</a>
+            </li>
+            <li {% if selected=="drawings" %} class="menu__entry menu-selected" {% else %} class="menu__entry" {% endif
+                %}>
+                <a href="{{ '/drawings' | prepend: site.baseurl }}">Drawings</a>
+            </li>
+            <li {% if selected=="about" %} class="menu__entry menu-selected" {% else %} class="menu__entry" {% endif %}>
+                <a href="{{ '/about' | prepend: site.baseurl }}">About</a>
+            </li>
         </ul>
     </div>
 

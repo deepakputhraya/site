@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: article_page
 title: Articles
 permalink: /articles/
 ---

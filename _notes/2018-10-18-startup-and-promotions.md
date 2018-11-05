@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: note
 title:  "Promotions and Startup"
 subtitle: "How to get promoted at start-ups"
 date:   2017-10-18 11:12:54

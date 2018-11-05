@@ -179,6 +179,12 @@ strong {
   margin-left: 10px;
 }
 
+.menu-selected {
+  border-bottom: 1px solid #303030;
+  color: #303030;
+  text-decoration: none;
+}
+
 /* =Titles */
 .page-title {
   margin-top: 50px;
@@ -485,29 +491,41 @@ div#columns small a {
   font-size: 1rem;
   justify-content: center;
   line-height: 1.7em;
-  margin: 60px auto;
-  max-width: 1920px;
-  display: inline-block;
+  margin: 50px auto;
+  //max-width: 1920px;
 }
 
 #text {
   flex-shrink: 1;
-  min-width: 600px;
+  width: 30%;
 }
 
 #photo {
   //float: right;
   flex-shrink: 3;
   overflow: no-display;
-  padding-left: 30px;
+  margin-left: 30px;
+  width: 60%;
 }
 
 #photo img {
   height: auto;
-  max-width: 1000px;
+  margin: 10px auto;
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  #photo {
+    height: auto;
+    max-width: 600px;
+  }
 }
 
 @media (max-width: 900px) {
+  #text {
+    width: 100%;
+  }
+
   #flexcontainer-index #photo {
     margin: 0;
     max-width: 100%;

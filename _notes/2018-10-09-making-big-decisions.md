@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: note
 title:  "How to make decisions"
 subtitle: "Thought process when making decisions"
 date:   2017-10-09 09:11:25

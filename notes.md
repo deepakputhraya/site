@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: note_page
 title: Notes
 permalink: /notes/
 ---
