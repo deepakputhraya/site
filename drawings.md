@@ -1,12 +1,12 @@
 ---
-layout: artwork
-title: Artwork
+layout: drawings
+title: Drawings
 permalink: /drawings/
 ---
 
 <div>
     <div id="columns">
-        {% assign sorted = site.data.artwork | reverse %}
+        {% assign sorted = site.data.drawings | reverse %}
         {% for art in sorted %}
             <a href="{{ art.url }}">
                 <figure>

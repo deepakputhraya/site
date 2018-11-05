@@ -43,7 +43,7 @@ sitemap:
             Older notes available <a href="{{ "/notes" | prepend: site.baseurl }}" class="readmore">here</a>.
         </div>
         <div id="photo">
-            {% assign artwork = site.data.artwork | reverse | first %}
+            {% assign artwork = site.data.drawings | reverse | first %}
             <figure>
                 <img src="{{ artwork.url}}">
                 <figcaption>{{ artwork.title }}</figcaption>

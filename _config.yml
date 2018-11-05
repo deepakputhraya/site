@@ -17,7 +17,7 @@ collections:
   blogs:
       output: true
       permalink: /:path/
-  artwork:
+  drawings:
       output: true
 
 author:
