@@ -22,6 +22,8 @@ sitemap:
                     </a>
                 </div>
             {% endfor %}
+            Older articles available <a href="{{ "/articles" | prepend: site.baseurl }}" class="readmore">here</a>.
+            <hr/>
             <h2>Notes</h2>
             {% assign sorted = site.notes | reverse %}
             {% for note in sorted limit 3%}
@@ -38,6 +40,7 @@ sitemap:
                          </span>
                 </div>
             {% endfor %}
+            Older notes available <a href="{{ "/notes" | prepend: site.baseurl }}" class="readmore">here</a>.
         </div>
         <div id="photo">
             {% assign artwork = site.data.artwork | reverse | first %}
