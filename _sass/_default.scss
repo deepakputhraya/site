@@ -58,8 +58,8 @@ p {
 li {
   font-size: 1em;
   line-height: 32px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 img {
@@ -133,7 +133,7 @@ strong {
 /* =Header */
 .wrapper {
   max-width: 800px;
-  margin: 50px auto;
+  margin: 0px auto;
 }
 
 .header {
@@ -163,7 +163,7 @@ strong {
 
 .menu__entry {
   display: inline-block;
-  margin-right: 35px;
+  margin-right: 5px;
 
   &:last-child {
     margin-right: 0px;
@@ -195,7 +195,6 @@ strong {
 
 /* =Titles */
 .page-title {
-  margin-top: 50px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -386,7 +385,6 @@ note-title {
   }
 
   .page-title {
-    margin-top: 50px;
     margin-bottom: 60px;
   }
 
@@ -400,14 +398,13 @@ note-title {
 
   .post-teaser__title {
     font-size: 18px;
-    @include centered-block();
   }
 
   .post-teaser__date {
     font-size: 16px;
     margin-top: 10px;
+    display: block;
     float: none;
-    @include centered-block();
   }
 
   .explore {
@@ -439,6 +436,10 @@ note-title {
 
 /*artwork*/
 #drawings {
+  figure {
+    margin-top: 1px;
+  }
+
   figure figcaption {
     font-size: .9rem;
     line-height: 1.5;
