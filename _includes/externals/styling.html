@@ -1,9 +1,10 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
 <link rel="stylesheet" href="{{ "/assets/vendor/lato/stylesheet.css" | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ "/assets/vendor/normalize-css/normalize.css" | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 {% if site.styles contains site.highlightstyle %}
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/vendor/highlight/styles/{{ site.highlightstyle }}.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/vendor/highlight/styles/{{ site.highlightstyle }}.css">
 {% else %}
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/vendor/highlight/styles/solarized_dark.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/vendor/highlight/styles/solarized_dark.css">
 {% endif %}
 <link rel="stylesheet" href="{{ "/assets/vendor/font-awesome/css/font-awesome.css" | prepend: site.baseurl }}">

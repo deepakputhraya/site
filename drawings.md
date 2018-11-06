@@ -4,16 +4,14 @@ title: Drawings
 permalink: /drawings/
 ---
 
-<div>
-    <div id="columns">
-        {% assign sorted = site.data.drawings | reverse %}
-        {% for art in sorted %}
-            <a href="{{ art.url }}">
-                <figure>
-                    <img src="{{ art.url}}">
-                    <figcaption>{{ art. title }}</figcaption>
-                </figure>
-            </a>
-        {% endfor %}
-    </div>
+<div class="columns" id="drawings">
+    {% assign sorted = site.data.drawings | reverse %}
+    {% for art in sorted %}
+        <a href="{{ art.url }}">
+            <figure class="column">
+                <img src="{{ art.url}}">
+                <figcaption>{{ art. title }}</figcaption>
+            </figure>
+        </a>
+    {% endfor %}
 </div>
