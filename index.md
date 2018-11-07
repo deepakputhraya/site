@@ -38,10 +38,9 @@ sitemap:
         Older notes available <a href="{{ "/notes" | prepend: site.baseurl }}" class="readmore">here</a>.
     </div>
     <div id="photo" class = "column is-hidden-mobile">
-        {% assign artwork = site.data.drawings | reverse | first %}
         <figure>
-            <img src="{{ artwork.url}}">
-            <figcaption>{{ artwork.title }}</figcaption>
+            <img src="https://dl.dropboxusercontent.com/s/wzk9jyi59es62cu/astronaut-pencils.jpg?dl=0">
+            <figcaption>"Astronaut"</figcaption>
         </figure>
     </div>
 </div>
