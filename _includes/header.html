@@ -1,11 +1,11 @@
-<header class="header">
+<header class="header columns is-mobile is-centered">
     <script type="text/javascript">
         var host = "deepak.puthraya.com";
         if ((host == window.location.host) && (window.location.protocol != "https:"))
             window.location.protocol = "https";
     </script>
-    <div class="navigation">
-        <ul class="menu">
+    <div class="">
+        <ul class="menu column">
             <li {% if selected=="home" %} class="menu__entry menu-selected" {% else %} class="menu__entry" {% endif %}>
                 <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
             </li>
