@@ -5,7 +5,7 @@ sitemap:
 ---
 
 <div id="home" class="columns is-centered is-mobile is-gapless">
-    <div id="text" class="column is-half">
+    <div id="text" class="column is-three-quarters-mobile is-half-tablet">
         <h2>Articles</h2>
         {% for post in site.posts limit:3%}
             <div class="post-teaser">

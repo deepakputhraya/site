@@ -107,6 +107,7 @@ blockquote {
     &:before {
       content: "** ";
     }
+
     &:after {
       content: " **";
     }
@@ -117,9 +118,11 @@ blockquote {
     font-size: 20px;
     color: $cloudy;
     font-weight: 300;
+
     &:before {
       content: "";
     }
+
     &:after {
       content: "";
     }
@@ -156,7 +159,6 @@ strong {
   font-size: 18px;
   margin: 0px;
   margin-top: 6px;
-  padding: 0px;
   list-style-type: none;
 }
 
@@ -447,12 +449,6 @@ note-title {
 }
 
 /*Home*/
-
-#home {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
 #photo figure figcaption {
   font-size: .9rem;
   line-height: 1.5;

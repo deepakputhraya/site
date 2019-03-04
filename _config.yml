@@ -36,3 +36,15 @@ exclude: ["README.md", "README.html", "node_modules", "gulpfile.js"]
 # Build settings
 highlighter: null
 markdown: kramdown
+
+social:
+  name: Deepak Puthraya
+  links:
+    - https://twitter.com/deepakputhraya
+    - https://www.google.com/+deepakputhraya
+    - https://github.com/deepakputhraya
+    - https://www.linkedin.com/in/deepakputhraya
+
+plugins:
+  - jekyll-seo-tag
+
