@@ -1,7 +1,11 @@
 ---
+layout: note
+title: Ref Check Questions
+subtitle: Important questions that can be asked when doing a candidates ref check
+date: 2017-10-09 09:11:25 +0000
+published: false
 
 ---
-## Ref Check Questions
 
 Did she ask questions? Was she curious about the product / mission / technologies?
 
