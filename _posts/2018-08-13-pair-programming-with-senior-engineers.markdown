@@ -53,3 +53,6 @@ Pair programming is a fantastic engineering practice & every organisation should
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">pair programming works best with a large uncertain search space of problems and solutions. the closer to a solved problem, the less it helps</p>&mdash; Kent Beck (@KentBeck) <a href="https://twitter.com/KentBeck/status/253532726714580992?ref_src=twsrc%5Etfw">October 3, 2012</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTIyODA0MTE3MF19
+-->
