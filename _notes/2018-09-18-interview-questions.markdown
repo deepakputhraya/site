@@ -30,7 +30,7 @@ Would you hire them again?
 
 Can you give me manager tips to manage this person?
 
-### Business Acumen
+## Business Acumen
 
 What is the difference between product company & service company? What differentiates enterprise from SAAS? Can they be treated in a similar way?
 
@@ -47,7 +47,7 @@ Which are the startups that you personally like?
 * Rough Unit Economics
 * Business model Defensibility
 
-### Management
+## Management
 
 Your reportee handling a big account resigns, what do you do?
 
@@ -66,7 +66,7 @@ How do you convert sales meetings into product insights?
 
 What’s your way of highlighting urgency?
 
-### Sales related questions
+## Sales related questions
 
 How do you know you clients are successful? How do you measure that?
 
@@ -78,7 +78,7 @@ How to know if the person has understood what you say?
 
 How do you handle uncertainty on deal closure?
 
-### Judging Culture Fit
+## Judging Culture Fit
 
 What do you and you don’t appreciate about your former managers?
 
@@ -94,7 +94,7 @@ What do you generally read or watch apart from work?
 
 What do you read or watch to better at your work?
 
-### Pricing related questions
+## Pricing related questions
 
 How do you answer customer questions when you don't know the answer?
 
@@ -106,7 +106,7 @@ What are the biggest obstacles to closing a deal?
 
 When is a price too low?
 
-### Negotiation related questions
+## Negotiation related questions
 
 Can you tell me about a time you failed to reach an agreement in negotiations?
 
@@ -118,7 +118,7 @@ Is it important to research before walking into negotiations? Why / why not?
 
 Is a negotiation a debate? Why / why not?
 
-### Product related questions for business guys
+## Product related questions for business guys
 
 You are connected to the correct potential customers but the are not buying, what can be the reasons?
 
@@ -134,7 +134,7 @@ To sell, does the quality of product/service make a difference or good quality s
 
 How do you know if competitor’s product if better or yours?
 
-## **Ref check questions**
+## Ref check questions
 
 1. If you have to describe XYZ from what’s on top your mind, what would that be?
 2. What have you observed as XYZs strengths?
