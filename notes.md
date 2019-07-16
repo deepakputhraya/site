@@ -10,12 +10,12 @@ permalink: /notes/
     {% for note in sorted %}
         <li class="post-teaser">
             <h3 class="post-teaser__title">
-                 <a href="{{ note.url | prepend: site.baseurl }}" class="note-teaser__title">{{ note.title }}</a>
+                 <a title="{{ note.title }}" href="{{ note.url | prepend: site.baseurl }}" class="note-teaser__title">{{ note.title }}</a>
                  <span class="post-teaser__date">{{ note.date | date: "%d %B %Y" }}</span>
             </h3>
              <span class="post-teaser__subtitle">
                 {{ note.excerpt | strip_html | truncatewords:30}}<br>
-                <a href="{{ note.url }}" class="readmore">Read more...</a><br><br>
+                <a title="{{ note.title }}" href="{{ note.url }}" class="readmore">Read more...</a><br><br>
              </span>
         </li>
     {% endfor %}

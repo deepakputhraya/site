@@ -4,10 +4,11 @@
 {% if page.cover %} {% assign cover = page.cover %} {% else %} {% assign cover = site.cover %} {% endif %}
 
 <!-- Twitter Cards -->
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="{{ title }}" />
-<meta name="twitter:description" content="{{ description }}" />
-<meta name="twitter:image" content="{{ site.url }}{{ cover }}" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="{{ title }}"/>
+<meta name="twitter:description" content="{{ description }}"/>
+<meta name="twitter:image" content="{{ site.url }}{{ cover }}"/>
+<meta name="twitter:site" content="https://twitter.com/{{ site.author.twitter }}">
 
 <!-- Google plus -->
 <meta name="author" content="{{ site.author.googleplus }}">
@@ -20,3 +21,4 @@
 <meta property="og:description" content="{{ description }}">
 <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:image" content="{{ site.url }}{{ cover }}">

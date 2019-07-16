@@ -8,7 +8,7 @@ layout: default
     {% for post in site.posts %}
         {% if post.categories contains page.category %}
             <li class="post-teaser">
-                <a href="{{ post.url | prepend: site.baseurl }}">
+                <a title="{{ post.title }}" href="{{ post.url | prepend: site.baseurl }}">
                     <span class="post-teaser__title">{{ post.title }}</span>
                     <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
                 </a>
@@ -20,7 +20,7 @@ layout: default
     {% if empty_category %}
         <li class="empty-post-list">
             It seems that there are no articles on that category,
-            please go back <a href="/">home</a> to see the full list of articles.
+            please go back <a title="home" href="/">home</a> to see the full list of articles.
         </li>
     {% endif %}
 </ul>
