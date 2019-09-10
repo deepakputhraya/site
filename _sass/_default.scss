@@ -10,6 +10,10 @@
   src: url('../assets/vendor/Aller/Aller_Bd.ttf') format('truetype');
 }
 
+html {
+  background-color: #0000;
+}
+
 /* =Base */
 body {
   background-color: white;
@@ -55,6 +59,10 @@ p {
   line-height: 32px;
 }
 
+ul {
+  list-style-type: square
+}
+
 li {
   font-size: 1em;
   line-height: 32px;
@@ -83,6 +91,12 @@ h2 {
 h2 {
   font-family: 'Aller Bolder', sans-serif;
   font-size: 1.2em;
+  font-weight: bolder;
+}
+
+h3 {
+  font-family: 'Aller Bolder', sans-serif;
+  font-size: 1em;
   font-weight: bolder;
 }
 
