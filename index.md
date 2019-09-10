@@ -20,7 +20,7 @@ sitemap:
             </div>
         {% endfor %}
         Older articles available <a href="{{ "/articles" | prepend: site.baseurl }}" class="readmore">here</a>.
-        <hr style="background-color: #F5F5F5; height: 1px"/>
+        <hr style="background-color: #ccc; height: 1px"/>
         <h2>Notes</h2>
         {% assign sorted = site.notes | reverse %}
         {% for note in sorted limit 3%}

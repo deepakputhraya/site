@@ -45,7 +45,8 @@ h1, h2, h3, p, li {
 }
 
 a {
-  color: $cloudy;
+  color: inherit;
+  background: -webkit-linear-gradient(top, transparent 0%, transparent 60%, #fbf36d 60%, #fbf36d 100%);
   font-weight: 300;
   text-decoration: none;
 
@@ -169,7 +170,6 @@ strong {
 }
 
 .menu {
-  color: $cloudy;
   font-size: 18px;
   margin: 0px;
   margin-top: 6px;
@@ -186,7 +186,8 @@ strong {
 }
 
 .menu__entry a {
-  font-weight: 100;
+  font-weight: 400;
+  background: None;
 }
 
 .social-links {
@@ -198,13 +199,17 @@ strong {
 }
 
 .social-links__entry {
+  background: None;
   display: inline-block;
   margin-left: 10px;
 }
 
+.social-links__entry:hover {
+  background: -webkit-linear-gradient(top, transparent 0%, transparent 60%, #fbf36d 60%, #fbf36d 100%);
+}
+
 .menu-selected {
-  border-bottom: 1px solid #303030;
-  color: #303030;
+  background: -webkit-linear-gradient(top, transparent 0%, transparent 60%, #fbf36d 60%, #fbf36d 100%);
   text-decoration: none;
 }
 
@@ -250,6 +255,7 @@ strong {
 }
 
 .post-teaser__title {
+  background: None;
   color: $iron;
   font-size: 1em;
   font-weight: 700;
@@ -293,6 +299,7 @@ note-title {
 }
 
 .note-teaser__title {
+  background: None;
   color: $iron;
   font-size: 1em;
   font-weight: 700;
@@ -444,6 +451,7 @@ note-title {
 }
 
 .readmore {
+  background: None;
   border-bottom: 1px solid #303030;
   color: #303030;
   text-decoration: none;
