@@ -12,19 +12,20 @@ permalink: /:year/:month/:day/:title:output_ext
 
 collections:
   notes:
-      output: true
-      permalink: /notes/:path/
+    output: true
+    permalink: /notes/:path/
   blogs:
-      output: true
-      permalink: /:path/
+    output: true
+    permalink: /:path/
   drawings:
-      output: true
+    output: true
 
 author:
   fullname: 'Deepak Puthraya'
   googleplus: https://www.google.com/+deepakputhraya
   github: deepakputhraya
   twitter: deepakputhraya
+  linkedin: https://www.linkedin.com/in/deepakputhraya
 
 # Syntax highlighting
 highlightstyle: 'atelier-sulphurpool.light'
