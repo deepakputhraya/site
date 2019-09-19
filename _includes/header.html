@@ -1,11 +1,7 @@
-<header class="header columns is-mobile is-centered">
-    <script type="text/javascript">
-        var host = "deepak.puthraya.com";
-        if ((host == window.location.host) && (window.location.protocol != "https:"))
-            window.location.protocol = "https";
-    </script>
-    <div class="">
-        <ul class="menu column">
+<div class="header columns is-mobile is-centered">
+    <div>
+        <h1 class="title"><a href="/" style="background: none;">Deepak Puthraya</a></h1>
+        <ul style="text-transform: uppercase" class="menu column">
             <li {% if selected=="home" %} class="menu__entry menu-selected" {% else %} class="menu__entry" {% endif %}>
                 <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
             </li>
@@ -25,4 +21,4 @@
             </li>
         </ul>
     </div>
-</header>
+</div>

@@ -2,7 +2,7 @@
 layout: note
 title: How to make decisions
 subtitle: Thought process when making decisions
-date: 2017-10-09 09:11:25 +0000
+date: 2018-10-09 09:11:25 +0000
 
 ---
 I have had lots of problems when making decisions and deciding the work that I should be delegating. Summarising the techniques that can help me get better at these.
