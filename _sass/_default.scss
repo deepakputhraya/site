@@ -6,6 +6,8 @@ $link-highlight-background: -webkit-linear-gradient(top, transparent 0%, transpa
 $cloudy: #000;
 $iron: #000;
 
+$newsletter-bg: #F2F2F2;
+
 @font-face {
   font-family: 'Aller Regular';
   font-style: normal;
@@ -499,4 +501,31 @@ note-title {
   height: auto;
   margin: 10px auto;
   max-width: 100%;
+}
+
+/*Newsletter*/
+#newsletter {
+  text-align: center;
+  background-color: $newsletter-bg;
+  padding: 1em;
+  width: 100%;
+
+  form {
+    text-align: center;
+
+    input {
+      display: inline;
+      padding: 1em;
+    }
+
+    input[type=email] {
+      min-width: 300px;
+    }
+
+    input[type=submit] {
+      border-radius: 3px;
+      box-shadow: inset 0px 0px 0px 1px #272727;
+      text-transform: uppercase;
+    }
+  }
 }
