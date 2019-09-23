@@ -23,7 +23,7 @@ sitemap:
         <hr style="background-color: #ccc; height: 1px"/>
         <h2>Notes</h2>
         {% assign sorted = site.notes | reverse %}
-        {% for note in sorted limit 3%}
+        {% for note in sorted limit:3%}
             <div class="post-teaser">
                     <h3 class="post-teaser__title">
                          <a href="{{ note.url | prepend: site.baseurl }}" class="post-teaser__title">{{ note.title }}</a>
