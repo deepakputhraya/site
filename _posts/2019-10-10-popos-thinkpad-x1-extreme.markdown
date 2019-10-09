@@ -139,9 +139,9 @@ If you restart, you should be able to see Windows as an option in the boot menu.
 It took me a long time to get my setup working and I made a lot of mistakes. Checkout the below links for more information if you are stuck with your setup or to explore more Pop!_OS
 
 ### Installing Linux
-1. Ask Ubuntu Thread - [Installing Linux on Thinkpad](https://askubuntu.com/questions/1162725/install-19-04-on-thinkpad-x1-extreme-gen-2)
-2. Arch Linux Wiki - [Lenovo_ThinkPad_X1_Extreme_(Gen_2)](https://wiki.archlinux.org/index.php/Lenovo_ThinkPad_X1_Extreme_(Gen_2))
-3. Reddit Post - [Installing Pop OS](https://www.reddit.com/r/thinkpad/comments/criq20/x1_extreme_gen_2_pop_os_i3_install/)
+- Ask Ubuntu Thread - [Installing Linux on Thinkpad](https://askubuntu.com/questions/1162725/install-19-04-on-thinkpad-x1-extreme-gen-2)
+- Arch Linux Wiki - [Lenovo_ThinkPad_X1_Extreme_(Gen_2)](https://wiki.archlinux.org/index.php/Lenovo_ThinkPad_X1_Extreme_(Gen_2))
+- Reddit Post - [Installing Pop OS](https://www.reddit.com/r/thinkpad/comments/criq20/x1_extreme_gen_2_pop_os_i3_install/)
 
 ### Links to help with Wifi installation 
 - Ask Ubuntu - [Missing Firmware](https://askubuntu.com/questions/832524/possible-missing-frmware-lib-firmware-i915/832528])
@@ -155,9 +155,13 @@ It took me a long time to get my setup working and I made a lot of mistakes. Che
 - [Upgrading Kernel on Ubuntu/Linux Mint](http://ubuntuhandbook.org/index.php/2019/07/install-linux-kernel-5-2-ubuntu-linux-mint/)
 
 ### Other
-1. [Youtube channel](https://www.youtube.com/user/linuxscoop/videos) with awesome videos of various distros.
-2. [Warning Message](https://www.reddit.com/r/pop_os/comments/botzga/psa_do_not_remove_cryptsetupinitramfs/)
-3. [Reddit /unixporn](https://www.reddit.com/r/unixporn/)
-4. [Reddit /pop_os](https://www.reddit.com/r/pop_os/)
-5. [Reddit /gnome](https://www.reddit.com/r/gnome/)
-6. [Reddit /thinkpad](https://www.reddit.com/r/thinkpad/)
+- [Youtube channel](https://www.youtube.com/user/linuxscoop/videos) with awesome videos of various distros.
+- [Warning Message](https://www.reddit.com/r/pop_os/comments/botzga/psa_do_not_remove_cryptsetupinitramfs/)
+- [Reddit /unixporn](https://www.reddit.com/r/unixporn/)
+- [Reddit /pop_os](https://www.reddit.com/r/pop_os/)
+- [Reddit /gnome](https://www.reddit.com/r/gnome/)
+- [Reddit /thinkpad](https://www.reddit.com/r/thinkpad/)
+
+## Reddit Discussions about this post
+ * [on /thinkpad](https://www.reddit.com/r/thinkpad/comments/dfmkxr/x1_extreme_gen_2_pop_os/) 
+ * [on /unixporn](https://www.reddit.com/r/unixporn/comments/dfm80f/gnome_pop_os_running_on_my_new_thinkpad/)
