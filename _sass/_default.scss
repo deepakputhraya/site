@@ -2,7 +2,8 @@ $background-color: #fff;
 $font-family-regular: 'Aller Regular', sans-serif;
 $font-family-bold: 'Aller Bolder', sans-serif;
 $html-background-color: #132120;
-$link-highlight-background: -webkit-linear-gradient(top, transparent 0%, transparent 60%, #03dffc 60%, #03dffc 100%);
+$highlight-color: #3c4245;
+$link-highlight-background: -webkit-linear-gradient(top, transparent 0%, transparent 90%, $highlight-color 90%, $highlight-color 100%);
 $cloudy: #000;
 $iron: #000;
 
@@ -36,6 +37,10 @@ img + em {
   margin: auto;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+code {
+  font-size: 0.85em;
 }
 
 h1, h2, h3, p, li {
@@ -73,7 +78,6 @@ ul {
 
 li {
   font-size: 1em;
-  line-height: 32px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -148,6 +152,17 @@ blockquote {
     &::after {
       content: "";
     }
+  }
+}
+
+figure {
+  margin: 0;
+  img {
+    margin-bottom: 5px;
+  }
+  figcaption {
+    text-align: center;
+    font-size: 0.9em;
   }
 }
 
@@ -537,4 +552,8 @@ note-title {
       }
     }
   }
+}
+
+.hljs {
+  font-size: 0.85em;
 }
