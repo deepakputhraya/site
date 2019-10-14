@@ -13,7 +13,7 @@ permalink: /articles/
                      <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
                 </h3>
                  <span class="post-teaser__subtitle">
-                    {{ post.excerpt | strip_html | truncatewords:30}}<br>
+                    {{ post.excerpt | strip_html | truncatewords:50}}<br>
                     <a href="{{ post.url }}" class="readmore">Read more...</a><br><br>
                  </span>
             </div>

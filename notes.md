@@ -14,7 +14,7 @@ permalink: /notes/
                      <span class="post-teaser__date">{{ note.date | date: "%d %B %Y" }}</span>
                 </h3>
                  <span class="post-teaser__subtitle">
-                    {{ note.excerpt | strip_html | truncatewords:30}}<br>
+                    {{ note.excerpt | strip_html | truncatewords:50}}<br>
                     <a title="{{ note.title }}" href="{{ note.url }}" class="readmore">Read more...</a><br><br>
                  </span>
             </div>

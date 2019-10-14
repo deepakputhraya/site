@@ -14,7 +14,7 @@ sitemap:
                          <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
                     </h3>
                      <span class="post-teaser__subtitle">
-                        {{ post.excerpt | strip_html | truncatewords:20}}<br>
+                        {{ post.excerpt | strip_html | truncatewords:50}}<br>
                         <a href="{{ post.url }}" class="readmore">Read more...</a><br><br>
                      </span>
             </div>
@@ -30,7 +30,7 @@ sitemap:
                          <span class="post-teaser__date">{{ note.date | date: "%d %B %Y" }}</span>
                     </h3>
                      <span class="post-teaser__subtitle">
-                        {{ note.excerpt | strip_html | truncatewords:20}}<br>
+                        {{ note.excerpt | strip_html | truncatewords:50}}<br>
                         <a href="{{ note.url }}" class="readmore">Read more...</a><br><br>
                      </span>
             </div>
