@@ -1,11 +1,10 @@
 $background-color: #fff;
-$font-family-regular: 'Aller Regular', sans-serif;
-$font-family-bold: 'Aller Bolder', sans-serif;
+$font-family-regular: 'Open Sans', 'Aller Regular', sans-serif;
+$font-family-bold: 'Open Sans', 'Aller Bolder', sans-serif;
 $html-background-color: #132120;
 $highlight-color: #3c4245;
 $link-highlight-background: -webkit-linear-gradient(top, transparent 0%, transparent 90%, $highlight-color 90%, $highlight-color 100%);
-$cloudy: #000;
-$iron: #000;
+$color: #4d4d4d;
 
 $newsletter-bg: #F2F2F2;
 
@@ -24,7 +23,7 @@ $newsletter-bg: #F2F2F2;
 /* =Base */
 body {
   background-color: inherit;
-  color: $iron;
+  color: $color;
   font-family: $font-family-regular;
 }
 
@@ -125,7 +124,7 @@ blockquote {
     position: absolute;
     bottom: -35px;
     font-size: 15px;
-    color: $iron;
+    color: $color;
     letter-spacing: 0px;
     left: 0px;
     right: 0px;
@@ -140,7 +139,7 @@ blockquote {
   }
 
   p {
-    color: $cloudy;
+    //color: $cloudy;
     display: inline;
     font-size: 20px;
     font-weight: 300;
@@ -167,7 +166,7 @@ figure {
 }
 
 strong {
-  color: $iron;
+  color: $color;
 }
 
 /* =Header */
@@ -198,7 +197,7 @@ strong {
 .logo {
   font-size: 2em;
   font-weight: 200;
-  color: $iron;
+  color: $color;
   display: block;
 }
 
@@ -260,7 +259,7 @@ strong {
 }
 
 .page-title__subtitle {
-  color: $cloudy;
+  //color: $cloudy;
   font-size: 0.5em;
   font-weight: 100;
 }
@@ -291,7 +290,7 @@ strong {
 
 .post-teaser__title {
   background: None;
-  color: $iron;
+  color: $color;
   font-size: 1em;
   font-weight: 700;
 }
@@ -300,13 +299,13 @@ strong {
   font-size: 1em;
   float: right;
   vertical-align: middle;
-  color: $cloudy;
+  //color: $cloudy;
 }
 
 .empty-post-list {
   font-size: 1em;
   font-weight: 100;
-  color: $iron;
+  color: $color;
   text-align: center;
 }
 
@@ -335,7 +334,7 @@ note-title {
 
 .note-teaser__title {
   background: None;
-  color: $iron;
+  color: $color;
   font-size: 1em;
   font-weight: 700;
 }
@@ -344,20 +343,20 @@ note-title {
   font-size: 1em;
   float: right;
   vertical-align: middle;
-  color: $cloudy;
+  //color: $cloudy;
 }
 
 .empty-note-list {
   font-size: 1em;
   font-weight: 100;
-  color: $iron;
+  color: $color;
   text-align: center;
 }
 
 /* =Explore */
 .explore {
   text-align: center;
-  color: $cloudy;
+  //color: $cloudy;
   margin-top: 100px;
 }
 
@@ -384,13 +383,13 @@ note-title {
 }
 
 .categories__item a {
-  color: $iron;
+  color: $color;
 }
 
 .categories__item:after {
   content: "/";
   margin-left: 6px;
-  color: $cloudy;
+  //color: $cloudy;
 }
 
 .categories__item:last-child:after {
@@ -400,7 +399,7 @@ note-title {
 
 /* =Post page */
 .about {
-  color: $cloudy;
+  //color: $cloudy;
   margin-top: 40px;
   text-align: center;
   line-height: 24px;
