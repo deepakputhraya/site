@@ -11,3 +11,5 @@ I'm a strong believer that developers shouldn't be spending too much time thinki
 
 Having written software professionally on nodeJS, Python and Java, I have little doubt that powerfully type-safe languages which expose more problems at compile time are the future.
 These days I'm especially interested in ways to improve the robustness and longevity of software, and reduce toil in operating it.
+
+If you are building software for developers, I would love to talk to you. 

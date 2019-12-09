@@ -19,6 +19,8 @@ collections:
     permalink: /:path/
   drawings:
     output: true
+  links:
+    output: true
 
 author:
   fullname: 'Deepak Puthraya'
