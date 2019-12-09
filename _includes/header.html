@@ -16,6 +16,9 @@
                 %}>
                 <a href="{{ '/drawings' | prepend: site.baseurl }}">Drawings</a>
             </li>
+            <li {% if selected=="links" %} class="menu__entry menu-selected" {% else %} class="menu__entry" {% endif %}>
+                <a href="{{ '/links' | prepend: site.baseurl }}">Links</a>
+            </li>
             <li {% if selected=="about" %} class="menu__entry menu-selected" {% else %} class="menu__entry" {% endif %}>
                 <a href="{{ '/about' | prepend: site.baseurl }}">About</a>
             </li>
