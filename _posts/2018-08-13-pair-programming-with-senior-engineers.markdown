@@ -3,7 +3,7 @@ layout: post
 title:  "Pair programming & Senior Engineers"
 subtitle: "Impact of pair programming on senior engineers"
 date: 2018-08-13 12:10:22
-cover: assets/images/pair-programming.jpg
+cover: /assets/images/pair-programming.jpg
 categories: [code]
 ---
 

@@ -4,7 +4,7 @@ description: >
   Deepak Puthraya's Blog.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://deepak.puthraya.com" # the base hostname & protocol for your site
+url: "https://deepak.puthraya.com/" # the base hostname & protocol for your site
 enforce_ssl: deepak.puthraya.com   # without any protocol
 future: true
 
