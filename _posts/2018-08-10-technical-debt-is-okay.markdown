@@ -3,6 +3,7 @@ layout: post
 title:  "Say Yes to Technical Debt"
 subtitle: "Good & Bad Technical Debt"
 date: 2018-08-10 02:06:35
+image: assets/images/tech-debt.jpeg
 categories: [code]
 ---
 

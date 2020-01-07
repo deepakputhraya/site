@@ -1,7 +1,7 @@
 $background-color: #fff;
-$font-family-regular: 'Open Sans', 'Aller Regular', sans-serif;
-$font-family-bold: 'Open Sans', 'Aller Bolder', sans-serif;
-$html-background-color: #132120;
+$font-family-regular: 'Merriweather Sans', 'Open Sans', 'Aller Regular', sans-serif;
+$font-family-bold: 'Merriweather Sans', 'Open Sans', 'Aller Bolder', sans-serif;
+$html-background-color: #142220;
 $highlight-color: #3c4245;
 $link-highlight-background: -webkit-linear-gradient(top, transparent 0%, transparent 90%, $highlight-color 90%, $highlight-color 100%);
 $color: #4d4d4d;
@@ -25,6 +25,7 @@ body {
   background-color: inherit;
   color: $color;
   font-family: $font-family-regular;
+  font-weight: lighter;
 }
 
 img + em {
@@ -180,12 +181,12 @@ strong {
   text-align: center;
 
   .title {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   @media (max-width: 800px) {
     .title {
-      font-size: 3em;
+      font-size: 2em;
     }
   }
 }

@@ -4,4 +4,5 @@
 <title>{% if page.title %} {{ page.title }} — {{ page.subtitle }} &raquo; {% endif %} {{ site.title }}</title>
 <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+{% if page.image %}<meta name="image" content="{{ page.image | prepend: site.baseurl }}">{% endif %}
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
