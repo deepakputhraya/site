@@ -3,7 +3,7 @@ layout: post
 title:  "PostgreSQL Backup and Recovery"
 subtitle: "Recover your database to any point in time using Barman"
 date:   2017-04-29 02:06:35
-cover: /assets/images/postgres-barman.png
+cover: assets/images/postgres-barman.png
 categories: [database]
 ---
 
