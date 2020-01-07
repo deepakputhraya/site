@@ -2,10 +2,8 @@
 layout: default
 ---
 
-<div class="wrapper">
-    {% assign selected = 'notes' %}
-    {% include header.html %}
-</div>
+{% assign selected = 'notes' %}
+{% include header.html %}
 {{ content }}
 {% include footer.html %}
 
