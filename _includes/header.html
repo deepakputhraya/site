@@ -1,27 +1,37 @@
-<div class="header columns is-mobile is-centered">
-    <div>
-        <h1 class="title"><a href="/" style="background: none;">Deepak Puthraya</a></h1>
-        <ul style="text-transform: uppercase" class="menu column">
-            <li {% if selected=="home" %} class="menu__entry menu-selected" {% else %} class="menu__entry" {% endif %}>
-                <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
-            </li>
-            <li {% if selected=="articles" %} class="menu__entry menu-selected" {% else %} class="menu__entry" {% endif
-                %}>
-                <a href="{{ '/articles' | prepend: site.baseurl }}">Articles</a>
-            </li>
-            <li {% if selected=="notes" %} class="menu__entry menu-selected" {% else %} class="menu__entry" {% endif %}>
-                <a href="{{ '/notes' | prepend: site.baseurl }}">Notes</a>
-            </li>
-            <li {% if selected=="drawings" %} class="menu__entry menu-selected" {% else %} class="menu__entry" {% endif
-                %}>
-                <a href="{{ '/drawings' | prepend: site.baseurl }}">Drawings</a>
-            </li>
-            <li {% if selected=="links" %} class="menu__entry menu-selected" {% else %} class="menu__entry" {% endif %}>
-                <a href="{{ '/links' | prepend: site.baseurl }}">Links</a>
-            </li>
-            <li {% if selected=="about" %} class="menu__entry menu-selected" {% else %} class="menu__entry" {% endif %}>
-                <a href="{{ '/about' | prepend: site.baseurl }}">About</a>
-            </li>
-        </ul>
+<div class="navigation-wrap start-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="/">Deepak Puthraya</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto py-4 py-md-0">
+                            <li {% if selected=="home" %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active" {% else %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4" {% endif %}>
+                                <a class="nav-link" href="{{ '/' | prepend: site.baseurl }}">Home</a>
+                            </li>
+                            <li {% if selected=="articles" %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active" {% else %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4" {% endif %}>
+                                <a class="nav-link" href="{{ '/articles' | prepend: site.baseurl }}">Articles</a>
+                            </li>
+                            <li {% if selected=="notes" %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active" {% else %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4" {% endif %}>
+                                <a class="nav-link" href="{{ '/notes' | prepend: site.baseurl }}">Notes</a>
+                            </li>
+                            <li {% if selected=="drawings" %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active" {% else %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4" {% endif %}>
+                                <a class="nav-link" href="{{ '/drawings' | prepend: site.baseurl }}">Drawings</a>
+                            </li>
+                            <li {% if selected=="links" %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active" {% else %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4" {% endif %}>
+                                <a class="nav-link" href="{{ '/links' | prepend: site.baseurl }}">Links</a>
+                            </li>
+                            <li {% if selected=="about" %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active" {% else %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4" {% endif %}>
+                                <a class="nav-link" href="{{ '/about' | prepend: site.baseurl }}">About</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
     </div>
 </div>

@@ -2,9 +2,9 @@
 layout: default
 ---
 
+{% assign selected = 'about' %}
+{% include header.html %}
 <div class="wrapper">
-    {% assign selected = 'about' %}
-    {% include header.html %}
     {{ content }}
 </div>
 {% include footer.html %}
