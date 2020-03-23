@@ -26,6 +26,6 @@
     "lodash": "^4.17.15"
   },
   "dependencies": {
-    "bulma": "^0.8.0"
+    "bulma": "^0.8.1"
   }
 }
