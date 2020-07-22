@@ -22,7 +22,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.10",
     "gulp": "^3.9.1",
-    "gulp-shell": "^0.7.1",
+    "gulp-shell": "^0.8.0",
     "lodash": "^4.17.19"
   },
   "dependencies": {
