@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/deepakputhraya/deepakputhraya.github.io#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.10",
+    "browser-sync": "^2.26.12",
     "gulp": "^3.9.1",
     "gulp-shell": "^0.8.0",
     "lodash": "^4.17.19"
