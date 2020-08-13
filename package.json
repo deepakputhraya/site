@@ -23,7 +23,7 @@
     "browser-sync": "^2.26.10",
     "gulp": "^3.9.1",
     "gulp-shell": "^0.8.0",
-    "lodash": "^4.17.19"
+    "lodash": "^4.17.20"
   },
   "dependencies": {
     "bulma": "^0.9.0"
