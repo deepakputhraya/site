@@ -20,12 +20,13 @@
   },
   "homepage": "https://github.com/deepakputhraya/deepakputhraya.github.io#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.10",
-    "gulp": "^3.9.1",
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.2.4",
     "gulp-shell": "^0.8.0",
-    "lodash": "^4.17.19"
+    "lodash": "^4.17.19",
+    "graceful-fs": "^4.2.4"
   },
   "dependencies": {
-    "bulma": "^0.9.0"
+    "bulma": "^0.9.1"
   }
 }
