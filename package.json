@@ -23,7 +23,7 @@
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
     "gulp-shell": "^0.8.0",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "graceful-fs": "^4.2.4"
   },
   "dependencies": {
