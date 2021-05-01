@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Aller Regular';
+    font-style: normal;
+    src: url('vendor/Aller/Aller_Lt.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Aller Bolder';
+    font-style: normal;
+    src: url('vendor/Aller/Aller_Bd.ttf') format('truetype');
+}
+
+body {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 100;
+    font-family: 'Merriweather Sans', 'Open Sans', 'Aller Regular', sans-serif;
+}
+
+a {
+    background: -webkit-linear-gradient(top, transparent 0%, transparent 90%);
+    font-weight: 300;
+    text-decoration: none;
+}

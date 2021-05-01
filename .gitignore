@@ -1,7 +1,14 @@
-_site
 .sass-cache
 .idea/
 node_modules/
 
 # Local Netlify folder
 .netlify
+
+*.log
+.cache
+.DS_Store
+../src/.temp
+dist
+.env
+.env.*
