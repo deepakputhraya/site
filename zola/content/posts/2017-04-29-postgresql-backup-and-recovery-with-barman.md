@@ -41,7 +41,7 @@ Create a new machine to install, run and manage backups. Let’s call this *barm
 
 On the barman machine install Barman
 
-```
+```bash
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 sudo apt-get update
 sudo apt-get install barman
@@ -49,7 +49,7 @@ sudo apt-get install barman
 
 Switch to the Barman user on the machine.
 
-```
+```bash
 sudo su - barman
 ```
 
@@ -57,14 +57,14 @@ Authorise the barman user to connect to the database machine(postgres@database-m
 
 On Barman as barman user:
 
-```
+```bash
 ssh-keygen
 ```
 Press enter for all the subsequent entries. Copy the contents on ~/.ssh/id_rsa.pub
 
 On the Database machine, switch to the Postgres user and copy the ssh key of the barman into ~/.ssh/authorized_keys
 
-```
+```bash
 sudo su - postgres
 echo “copied-ssh-key-string” >> ~/.ssh/authorized_keys
 ```
@@ -73,13 +73,13 @@ The above commands also need to be run between Postgresql machine and the Barman
 
 Test the connections with the below commands: To connect to the barman machine from the database machine as postgres user:
 
-```
+```bash
 ssh barman@barman-server-ip
 ```
 
 To connect to database machine from Barman
 
-```
+```bash
 ssh postgres@main-db-server-ip
 ```
 
@@ -88,7 +88,7 @@ If the above two commands are working, that means the two machines can connect e
 ## Configuring Barman for backups
 Edit /etc/barman.conf to be set the properties as below:
 
-```
+```bash
 [barman]
 barman_home = /var/lib/barman
 barman_user = barman
@@ -116,7 +116,7 @@ What we did above was set the global configurations for all our Postgresql backu
 
 Add the below lines to the end of the file `/etc/barman.d/pg.conf` so as to specify which Postgresql instances need to be backed up:
 
-```
+```toml
 [pg]
 description = “PG Backup”
 conninfo = host=10.0.2.2 user=postgres
@@ -153,7 +153,7 @@ host         all          all         <barman ip>/32           trust
 
 Make an entry for ‘replication’ or ‘all’ in pg_hba.conf file. We will also need to make changes in the postgres.conf file:
 
-```
+```toml
 listen_addresses = '*'
 archive_mode = on
 wal_level = ‘replica’
@@ -168,27 +168,27 @@ Restart the Postgresql instance.
 
 On barman once all the configurations are done:
 
-```
+```bash
 barman switch-xlog --force --archive pg
 barman check pg
 ```
 
 To create a slot run:
 
-```
+```bash
 barman receive-wal --create-slot pg
 ```
 The check command may show FAILED in minimum redundancy requirements and backup maximum age
 
 Create a base backup of the PostgreSQL instance
 
-```
+```bash
 barman backup pg
 ```
 Cron
 We need to setup cron to start backup every day at a particular time:
 
-```
+```bash
 crontab -e
 ```
 Add the following entries:
@@ -203,7 +203,7 @@ The above has created a cron that takes a base backup of the database every day 
 Creating a Standby Server
 Installing Postgres on Ubuntu 14.04:
 
-```
+```bash
 sudo add-apt-repository “deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main”
 wget -quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get update
@@ -211,17 +211,17 @@ sudo apt-get install postgresql-9.6
 ```
 From the barman machine run: To get the list of backup done so far:
 
-```
+```bash
 barman list-backup pg
 ```
 To get the latest backup information we can use a shortcut:
 
-```
+```bash
 barman show-backup pg latest
 ```
 To recover first stop the standby Postgresql instance:
 
-```
+```bash
 service postgresql stop
 ```
 Now run the command below:
@@ -234,14 +234,14 @@ In case you get stuck
 
 ### List of slots in Postgresql
 
-```
+```bash
 select * from pg_replication_slots;
 ```
 To know what each slot means you can read the Postgresql documentation.
 
 ### To delete slots in Postgresql
 
-```
+```bash
 select pg_drop_replication_slot('pg');
 ```
 In the above command pg is the slot name.
@@ -250,12 +250,12 @@ In the above command pg is the slot name.
 
 In case you want to receive a mail whenever a base backup gets completed you can write a small script that would send you the mail and this can be triggered via the hook scripts configuration. In the pg.conf of barman add this line:
 
-```
+```bash
 post_backup_script = /var/lib/barman/report.sh
 ```
 In the home directory of the barman user create a shell script called `report.sh`
 
-```shell
+```bash
 #!/bin/bash
 # Delete the oldest backup
 # It will only be deleted if minimum redundancy criteria is met

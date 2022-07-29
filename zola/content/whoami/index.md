@@ -1,7 +1,7 @@
 +++
 title = "About"
-template = "about.html"
-page_template = "about.html"
+template = "whoami.html"
+page_template = "whoami.html"
 [extra]
 subtitle = "Deepak Puthraya"
 +++

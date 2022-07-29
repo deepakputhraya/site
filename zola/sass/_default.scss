@@ -266,11 +266,11 @@ strong {
 }
 
 .post-title {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .post-title__text {
-  font-size: 1em;
+  font-size: 2em;
   font-weight: 800;
 }
 
@@ -786,4 +786,8 @@ note-title {
     margin-top: 10px !important;
     margin-bottom: 20px !important;
   }
+}
+
+pre {
+  padding: 0%;
 }

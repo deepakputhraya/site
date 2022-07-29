@@ -8,3 +8,5 @@ node_modules/
 .netlify
 .jekyll-cache/
 public
+zola/public/
+
