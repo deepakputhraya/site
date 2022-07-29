@@ -1,4 +1,5 @@
 $background-color: #fff;
+$cloudy: #c0c0c0;
 $font-family-regular: 'Merriweather Sans', 'Open Sans', 'Aller Regular', sans-serif;
 $font-family-bold: 'Merriweather Sans', 'Open Sans', 'Aller Bolder', sans-serif;
 $html-background-color: #142220;
@@ -260,8 +261,9 @@ strong {
 }
 
 .page-title__subtitle {
-  //color: $cloudy;
-  font-size: 0.5em;
+  text-align: center;
+  color: $cloudy;
+  font-size: 0.95em;
   font-weight: 100;
 }
 
@@ -270,6 +272,8 @@ strong {
 }
 
 .post-title__text {
+  margin-bottom: 0;
+  text-align: center;
   font-size: 2em;
   font-weight: 800;
 }

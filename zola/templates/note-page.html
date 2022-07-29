@@ -4,10 +4,8 @@
 {% set_global selected = "home" %}
 {% include "header.html" %}
 <div class="wrapper">
-  <h1 class="page-title post-title">
-    <div class="page-title__text post-title__text">{{ page.title }}</div>
-  </h1>
-  <p class="subtitle"><strong>{{ page.date }}</strong></p>
-  {{ page.content | safe }}
+  <h1 class="page-title__text post-title__text">{{ page.title }}</h1>
+  <p class="subtitle page-title__subtitle">{{ page.date | date(format="%d %h %Y") }}</p>
+{{ page.content | safe }}
 </div>
 {% endblock content %}
