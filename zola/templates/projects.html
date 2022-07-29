@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set_global selected = "projects" %}
+{% include "header.html" %}
+<div class="wrapper">
+  <h1 class="has-text-centered">Projects & Apps</h1>
+  <p style="margin-top: 1em; margin-bottom: 1em;">
+    I try to build small projects to scrath my itch & sometimes to learn new technologies. Here are a few projects that I have worked on.
+  </p>
+  <div class="columns is-centered is-mobile is-desktop is-5">
+    {% for post in section.pages %}
+    <div id="text" class="column is-half-desktop is-three-quarters-mobile is-half-tablet">
+      <a href="{{ post.permalink }}">
+        <div class="box">
+          <article class="media" style="padding:6px">
+            <div class="media-content" style="align-self: center">
+              <img class="" src="{{ post.extra.icon }}" width="128" height="128">
+              <div class="media-content has-text-centered" style="align-self: center">
+                <h2 class="title has-text-centered">{{post.title}}</h2>
+                  <p class="subtitle is-5 has-text-centered" style="margin-bottom: 0.3rem">{{ post.description }}</p>
+                  <div class="media-content" style="align-self: center">
+                    {% for tag in post.extra.tags %}
+                      <span class="tag is-small is-info is-light">{{tag}}</span>
+                    {% endfor %}
+                  </div>
+                </div>    
+            </div>
+          </article>
+        </div>  
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock content %}

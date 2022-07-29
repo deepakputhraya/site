@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set_global selected = "posts" %}
+{% include "header.html" %}
+<div class="wrapper">
+  <h1 class="page-title__text post-title__text">{{ page.title }}</h1>
+  <p class="subtitle page-title__subtitle">{{ page.date | date(format="%d %h %Y") }}</p>
+{{ page.content | safe }}
+</div>
+{% endblock content %}

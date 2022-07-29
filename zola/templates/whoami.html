@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set_global selected = "about" %}
+{% include "header.html" %}
+<div class="wrapper">
+  {{ page.content | safe }}
+</div>
+{% endblock content %}

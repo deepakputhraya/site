@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set_global selected = "notes" %}
+{% include "header.html" %}
+<div>
+  <div class="columns is-centered is-mobile is-gapless">
+    <div id="text" class="column is-three-quarters-mobile is-half-tablet">
+        {% for post in section.pages %}
+            <div class="post-teaser">
+                <h3 class="post-teaser__title">
+                     <a href="{{ post.permalink }}" class = "post-teaser__title">{{ post.title }} </a>
+                     <span class="post-teaser__date">{{ post.date | date(format="%d %B %Y") }}</span>
+                </h3>
+                 <span class="post-teaser__subtitle">
+                    {{ post.content | striptags | truncate(length=300)}}<br>
+                    <a href="{{ post.permalink }}" class="readmore">Read more...</a><br><br>
+                 </span>
+            </div>
+        {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock content %}

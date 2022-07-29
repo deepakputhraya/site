@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+  <!-- <title>MyBlog</title> -->
+  {% include "meta_tags/base.html" %}
+  {% include "meta_tags/sharing.html" %}
+  {% include "external/styling.html" %}
+</head>
+
+<body>
+    <!-- {% set_global selected = "posts" %} -->
+    {% block content %} {% endblock %}
+    {% include "footer.html" %}
+</body>
+{% include "external/scripting.html" %}
+{% include "external/google_analytics.html" %}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</html>

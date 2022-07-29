@@ -1,0 +1,37 @@
+<div class="navigation-wrap start-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="/posts">Deepak Puthraya</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto py-4 py-md-0">
+                            <li {% if selected=="posts" %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active" {% else %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4" {% endif %}>
+                                <a class="nav-link" href="/posts">Posts</a>
+                            </li>
+                            <li {% if selected=="notes" %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active" {% else %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4" {% endif %}>
+                                <a class="nav-link" href="/notes">Notes</a>
+                            </li>
+                            <li {% if selected=="projects" %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active" {% else %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4" {% endif %}>
+                                <a class="nav-link" href="/projects">Projects</a>
+                            </li>
+                            <li {% if selected=="drawings" %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active" {% else %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4" {% endif %}>
+                                <a class="nav-link" href="/drawings">Drawings</a>
+                            </li>
+                            <li {% if selected=="links" %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active" {% else %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4" {% endif %}>
+                                <a class="nav-link" href="/links">Links</a>
+                            </li>
+                            <li {% if selected=="about" %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active" {% else %} class="nav-item pl-4 pl-md-0 ml-0 ml-md-4" {% endif %}>
+                                <a class="nav-link" href="/whoami">whoami</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
