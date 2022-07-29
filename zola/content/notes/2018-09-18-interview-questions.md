@@ -3,7 +3,7 @@ layout: note
 title: Interview & Ref Check Questions
 extra:
   subtitle: Generic questions that one can ask during interviews and ref check.
-date: 2018-09-18 09:11:25 +0000
+date: 2018-09-18 09:11:25
 published: false
 
 ---

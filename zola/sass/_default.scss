@@ -1,7 +1,7 @@
 $background-color: #fff;
-$cloudy: #c0c0c0;
-$font-family-regular: 'Merriweather Sans', 'Open Sans', 'Aller Regular', sans-serif;
-$font-family-bold: 'Merriweather Sans', 'Open Sans', 'Aller Bolder', sans-serif;
+$cloudy: #9f9f9f;
+$font-family-regular: "Fira Sans", 'Merriweather Sans', 'Open Sans', 'Aller Regular', sans-serif;
+$font-family-bold: "Fira Sans", 'Merriweather Sans', 'Open Sans', 'Aller Bolder', sans-serif;
 $html-background-color: #142220;
 $highlight-color: #3c4245;
 $link-highlight-background: -webkit-linear-gradient(top, transparent 0%, transparent 90%, $highlight-color 90%, $highlight-color 100%);
@@ -26,7 +26,7 @@ body {
   background-color: inherit;
   color: $color;
   font-family: $font-family-regular;
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 img + em {
@@ -59,7 +59,7 @@ h1, h2, h3, p, li {
 a {
   background: $link-highlight-background;
   color: inherit;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
 
   &:hover {
@@ -264,7 +264,7 @@ strong {
   text-align: center;
   color: $cloudy;
   font-size: 0.95em;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .post-title {
@@ -297,7 +297,7 @@ strong {
 .post-teaser__title {
   background: None;
   color: $color;
-  font-size: 1em;
+  font-size: 1.618rem;
   font-weight: 700;
   a:hover {
     text-decoration: none;
@@ -305,7 +305,8 @@ strong {
 }
 
 .post-teaser__date {
-  font-size: 1em;
+  font-size: 16px;
+  font-weight: normal;
   float: right;
   vertical-align: middle;
   //color: $cloudy;
@@ -486,6 +487,10 @@ note-title {
   }
 }
 
+.post-teaser__subtitle {
+  font-weight: 400;
+}
+
 .content {
   a {
     border-bottom: 1px solid #303030;
@@ -528,7 +533,9 @@ note-title {
 }
 
 /*Newsletter*/
+
 #newsletter {
+  font-weight: normal;
   background-color: $newsletter-bg;
   margin-top: 5em;
   padding: 1em;
