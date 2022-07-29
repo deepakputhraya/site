@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set_global selected = "links" %}
+{% include "header.html" %}
+<div class="wrapper" id="links">
+    Awesome people with amazing blogs.
+    <ul>
+    {% for people in page.extra.people %}
+        <li><a href="{{ people.url }}" target="_blank">{{ people.title }}</a></li>
+    {% endfor %}
+    </ul>
+    
+    Few of my favourite articles that I enjoyed and I would recommend people to read.    
+    <ul>
+    {% for article in page.extra.links %}
+        <li><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></li>
+    {% endfor %}
+    </ul>
+</div>
+{% endblock content %}

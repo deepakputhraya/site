@@ -1,0 +1,8 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %} {{ page.title }} | {{ page.extra.subtitle }} {% else %} {{ config.title }} {% endif %}</title>
+<meta name="description" content="{% if page.description %}{{ page.description | striptags | strip_newlines | truncate(length=300) }}{% else %}{{ config.description }}{% endif %}">
+{% if page.tags %}<meta name="keywords" content="{{ page.tags | join(sep=', ') }}">{% endif %}
+{% if page.cover %}<meta name="image" content="{{ page.cover }}">{% endif %}
+<link rel="canonical" href="{% if var_name %}{{ page.permalink | replace(from='index.html', to='') }}{% endif %}">

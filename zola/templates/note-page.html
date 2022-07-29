@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-{% set_global selected = "posts" %}
+{% set_global selected = "home" %}
 {% include "header.html" %}
 <div class="wrapper">
   <h1 class="page-title post-title">
     <div class="page-title__text post-title__text">{{ page.title }}</div>
   </h1>
   <p class="subtitle"><strong>{{ page.date }}</strong></p>
-{{ page.content | safe }}
+  {{ page.content | safe }}
 </div>
 {% endblock content %}

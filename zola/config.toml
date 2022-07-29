@@ -1,6 +1,7 @@
 # The URL the site will be built for
 base_url = "https://deepak.puthraya.com"
-
+title = 'Deepak Puthraya'
+description = "Deepak Puthraya's Blog."
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
@@ -15,3 +16,7 @@ highlight_code = true
 [extra]
 # Put all your custom variables here
 highlightstyle= 'atelier-sulphurpool.light'
+github= 'deepakputhraya'
+twitter= 'deepakputhraya'
+linkedin= 'https://www.linkedin.com/in/deepakputhraya'
+cover=''
