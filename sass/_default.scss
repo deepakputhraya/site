@@ -84,7 +84,6 @@ li {
 }
 
 img {
-  margin: 40px auto;
   display: block;
   max-width: 100%;
 }
@@ -551,7 +550,8 @@ note-title {
     }
 
     input[type=email] {
-      min-width: 300px;
+      border-radius: 3px;
+      min-width: 280px;
     }
 
     input[type=submit] {
@@ -562,6 +562,12 @@ note-title {
     }
 
     @media (max-width: 800px) {
+      input[type=email] {
+        min-width: 180px;
+        margin-top: 10px;
+        width: 100%;
+      }
+
       input[type=submit] {
         margin-top: 10px;
         width: 100%;
