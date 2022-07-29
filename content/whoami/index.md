@@ -6,7 +6,9 @@ page_template = "whoami.html"
 subtitle = "Deepak Puthraya"
 +++
 
-<img src='https://www.gravatar.com/avatar/981680c6e4b9c65417243022d2a97729?s=300'/>
+<figure class="mx-auto image" style="width: 300px; height: 300px">
+    <img class='mx-auto is-rounded' src='https://www.gravatar.com/avatar/981680c6e4b9c65417243022d2a97729?s=300'/>
+</figure>
 
 I am an engineer at [Harness](https://harness.io) where I work on our CD platform. I have helped integrate third party builds systems with Harness and I am currently working on building a tool to help migrate customers from our first generation CD to our next generation CD. I'm a strong believer that developers shouldn't be spending too much time thinking about infrastructure, that is one of the reasons I joined Harness. Prior to Harness I worked at [Playment](https://playment.io) where I helped design & build their computer vision tools. I love to tinker with new technologies and I am currently trying to learn Rust. 
 
