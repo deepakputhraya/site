@@ -32,11 +32,11 @@ Select with a mouse any part of an image, photo, PDF document, or anything on yo
 - Clipboard history of all the texts captured using Vizion.
 
 <figure>
-  <img class="" src="/assets/images/vizion/image-of-menu.png">
+  <img class="mx-auto mt-4" src="/assets/images/vizion/Image-of-menu.png">
   <figcaption>Vizion always stays in the menu bar. Easily accessible whenever you need it.</figcaption>
 </figure>
 <figure>
-  <img class="" src="/assets/images/vizion/qr-code.gif">
+  <img class="mt-4" src="/assets/images/vizion/qr-code.gif">
   <figcaption>Capture text from QR codes</figcaption>
 </figure>
 
