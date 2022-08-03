@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set_global selected = "" %}
+{% include "header.html" %}
+<div class="wrapper">
+  <h1 class="page-title__text post-title__text">{{ section.title }}</h1>
+{{ section.content | safe }}
+</div>
+{% endblock content %}
