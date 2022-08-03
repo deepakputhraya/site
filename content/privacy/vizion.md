@@ -9,7 +9,6 @@ extra:
     - paid
 date:   2019-07-18 11:12:54
 ---
-# Privacy Policy
 ## Privacy Policy for the Website
 We value your privacy and question everything that stores or processes your personal information. With that in mind, we still needed a few external services to publish Vizion. Here is everything you need to know. Don’t hesitate to ask if there is something not explained: deepak@puthraya.com
 
