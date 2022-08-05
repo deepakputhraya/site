@@ -11,6 +11,19 @@ extra:
 date:   2019-07-18 11:12:54
 ---
 
+
+<div class="columns is-vcentered is-centered is-text-centered">
+  <div class="column is-half is-narrow is-centered text-center">
+    <a class="no-underline app-store-badge" href="https://apps.apple.com/us/app/vizion-text-snipper/id1637685810" target="_blank" style="background: none; border: none; display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;">
+        <img src="/assets/images/download-on-mac-app-store-badge.svg" alt="Download on the Mac App Store" style="border-radius: 13px; width: 250px; height: 83px;">
+    </a>
+  </div>
+  <div class="column is-half is-narrow is-centered text-center mx-auto">
+    <a href="https://www.producthunt.com/posts/vizion?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-vizion" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=355046&theme=light" alt="Vizion - Copy&#0032;text&#0032;from&#0032;images&#0044;&#0032;pdfs&#0032;&#0038;&#0032;system&#0032;user&#0032;interface | Product Hunt" style="display: inline; width: 250px; height: 54px;" width="250" height="54" />
+    </a>
+  </div>
+</div>
+
 Vizion is an easy-to-use desktop Mac OCR app that can extract and recognize any non-searchable and non-editable text on your Mac's screen. It is a super convenient alternative to complicated optical character recognition tools.
 
 <figure>
