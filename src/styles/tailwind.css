@@ -1,0 +1,20 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import './prism.css';
+@import 'tailwindcss/utilities';
+
+.twitter-tweet {
+    @apply mx-auto
+}
+
+.text-data a {
+    @apply mt-4 text-teal-500
+}
+
+figure img {
+    @apply w-full h-full;
+}
+
+figure figcaption {
+    @apply text-center
+}
