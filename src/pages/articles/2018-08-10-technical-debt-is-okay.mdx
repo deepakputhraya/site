@@ -2,7 +2,7 @@ import { ArticleLayout } from '@/components/ArticleLayout'
 
 export const meta = {
 author: 'Deepak Puthraya',
-cover: 'assets/images/tech-debt.jpeg',
+cover: 'https://cdn.puthraya.com/assets/images/tech-debt.jpeg',
 categories: ['code'],
 date: '2018-08-10',
 title: 'Say Yes to Technical Debt',
@@ -20,7 +20,7 @@ Think of technical debt as anything about your code that slows you down over the
 
 After [Playment](https://playment.io "Playment's website") launched its [annotation platform](https://app.playment.io "Playment's annotation platform"), we set out to build an onboarding tool for our platform so that we could mitigate the number of users that were dropping off after signups. Product owner wanted us to build a simple onboarding experience for the first time web users. They wanted us to ship the feature real quick so that they could test & iterate over it. We built a quick & dirty feature that required a developer's help to set up the onboarding flow, but it worked. The feature was poorly designed,  not very extendible & had few test cases. After having released the feature, we could see that many users were now completing the onboarding flow, earning few bucks & continued to do other tasks on our Platform. The code ended up being untouched for over 6 months till we decided to extend the feature into onboarding experience for projects.
 
-![](/assets/images/sample_onboarding.png)
+![](https://cdn.puthraya.com/assets/images/sample_onboarding.png)
 *Sample onboarding flow*
 
 However, when we wanted to continue the product line we realised it was good that we left it half done because what we intend to do now over the same feature happened to be a much better thing than what we thought we would do, which wasn't possible in hindsight at all. It was right for us to have taken the quick & dirty approach to problem-solving rather than the correct & tedious one.
