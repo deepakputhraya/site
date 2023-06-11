@@ -5,6 +5,7 @@ import { Header } from '@/components/Header'
 
 import '@/styles/tailwind.css'
 import 'focus-visible'
+import { Analytics } from '@vercel/analytics/react';
 
 function usePrevious(value) {
   let ref = useRef()
@@ -33,6 +34,7 @@ export default function App({ Component, pageProps, router }) {
         </main>
         <Footer />
       </div>
+      <Analytics />
     </>
   )
 }
