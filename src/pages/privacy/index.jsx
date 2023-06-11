@@ -46,7 +46,7 @@ export default function PrivacyPolicies({ policies }) {
           </Prose>
           <ul role="list" className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
           {policies.map((policy) => (
-              <a href={`/privacy/${policy.slug}`}>
+              <a href={`/privacy/${policy.slug}`} key={policy.slug}>
             <Card as="li" key={policy.title}>
                 <div className="p-4 flex relative z-10 flex items-center justify-center rounded-xl bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                 <img

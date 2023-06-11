@@ -98,8 +98,8 @@ export default function Uses() {
           <ToolsSection title="Blogs">
             {websites.map(website => {
               return (
-                  <Tool title={website.name}>
-                    <a target={'_blank'} href={website.link}>{website.link}</a>
+                  <Tool title={website.name} key={website.name}>
+                    <a rel="noreferrer" target={'_blank'} href={website.link}>{website.link}</a>
                   </Tool>
               )
             })}
