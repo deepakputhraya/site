@@ -39,8 +39,12 @@ export default function Document() {
   return (
     <Html className="h-full antialiased" lang="en">
       <Head>
+          <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.puthraya.com/favicon_io/apple-touch-icon.png"/>
+          <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.puthraya.com/favicon_io/favicon-32x32.png"/>
+          <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.puthraya.com/favicon_io/favicon-16x16.png"/>
+          <link rel="manifest" href="https://cdn.puthraya.com/favicon_io/site.webmanifest"/>
         <script dangerouslySetInnerHTML={{ __html: modeScript }} />
-          <link
+        <link
           rel="alternate"
           type="application/rss+xml"
           href={`${process.env.NEXT_PUBLIC_SITE_URL}/rss/feed.xml`}
