@@ -4,7 +4,6 @@ import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { formatDate } from '@/lib/formatDate'
 import { getAllArticles } from '@/lib/getAllArticles'
-import {readFolder} from "@/lib/readFolder";
 
 function Article({ article }) {
   return (

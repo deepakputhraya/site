@@ -7,7 +7,7 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 function ToolsSection({ children, ...props }) {
   return (
     <Section {...props}>
-      <ul role="list" className="space-y-16">
+      <ul role="list" className="space-y-8">
         {children}
       </ul>
     </Section>
@@ -24,6 +24,20 @@ function Tool({ title, href, children }) {
     </Card>
   )
 }
+
+const websites = [{
+  name: 'Brandur Leach',
+  link: 'https://brandur.org/'
+}, {
+  name: 'Julia Evans',
+  link: 'https://jvns.ca/'
+},{
+  name: 'Gergely Orosz',
+  link: 'https://blog.pragmaticengineer.com/'
+},{
+  name: 'Benedict Evans',
+  link: 'https://ben-evans.com/'
+},]
 
 export default function Uses() {
   return (
@@ -48,40 +62,47 @@ export default function Uses() {
               through with our various launch simulations.
             </Tool>
             <Tool title="Logitech MX Keys">
-              Keys
+              I love Logitech MX Keys for its sleek design, responsive keys,
+              wireless functionality, and seamless multi-device connectivity.
             </Tool>
             <Tool title="Logitech MX">
-              Mouse
+              I love the Logitech MX Master 3S for its exceptional comfort,
+              programmable buttons for every app, and the convenience of a Type-C charger.
             </Tool>
           </ToolsSection>
           <ToolsSection title="Development tools">
             <Tool title="Jetbrains Products">
-              I don’t care if it’s missing all of the fancy IDE features
-              everyone else relies on, Sublime Text is still the best text
-              editor ever made.
+              The reason I'm fond of JetBrains products is their rich set of features
+              that are readily available without the need for extensive customization.
             </Tool>
             <Tool title="iTerm2">
               I’m honestly not even sure what features I get with this that
               aren’t just part of the macOS Terminal but it’s what I use.
             </Tool>
-            <Tool title="Github Copilot">
-              Great software for working with databases. Has saved me from
-              building about a thousand admin interfaces for my various projects
-              over the years.
-            </Tool>
           </ToolsSection>
           <ToolsSection title="Productivity">
             <Tool title="Raycast">
-              The newest kid on the block with a growing list of plugins.
+              Raycast's intuitive interface, customizable workflows, and vast plugin ecosystem
+              provides quick access to essential tasks and commands. It's the ultimate productivity companion
+              that helps me stay organized and accomplish more in less time.
             </Tool>
             <Tool title="Magnet">
-              Using a daily notes system instead of trying to keep things
-              organized by topics has been super powerful for me. And with
-              Reflect.
+              Magnet has become an indispensable part of my dual-screen experience, especially with one monitor set up vertically.
+              It simplifies window organization with its user-friendly keyboard shortcuts,
+              allowing me to effortlessly arrange and resize windows
             </Tool>
             <Tool title="Vizion">
               I use this regularly to capture text from images. I built this product.
             </Tool>
+          </ToolsSection>
+          <ToolsSection title="Blogs">
+            {websites.map(website => {
+              return (
+                  <Tool title={website.name}>
+                    <a target={'_blank'} href={website.link}>{website.link}</a>
+                  </Tool>
+              )
+            })}
           </ToolsSection>
         </div>
       </SimpleLayout>
