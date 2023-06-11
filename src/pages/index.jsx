@@ -23,6 +23,7 @@ import image5 from '@/images/photos/image-5.jpg'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
+import {useState} from "react";
 
 function MailIcon(props) {
   return (
@@ -107,9 +108,14 @@ function SocialLink({ icon: Icon, ...props }) {
 }
 
 function Newsletter() {
+  const [email, setEmail] = useState('')
+
   return (
     <form
-      action="/thank-you"
+        method="post"
+        id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+        target="_blank" noValidate
+      action="https://puthraya.us4.list-manage.com/subscribe/post?u=2342d3bd4a7665ec0b913d439&amp;id=30f5c02240"
       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
     >
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
@@ -119,20 +125,29 @@ function Newsletter() {
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
         Get notified when I publish something new, and unsubscribe at any time.
       </p>
-      <div className="mt-6 flex">
+      <div className="mt-6 flex" id="mc_embed_signup_scroll">
         <input
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+            id="mce-EMAIL"
           type="email"
           placeholder="Email address"
           aria-label="Email address"
           required
           className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
         />
-        <Button type="submit" className="ml-4 flex-none">
+        {/*real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}
+        <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true">
+          <input type="text"
+                 name="b_2342d3bd4a7665ec0b913d439_30f5c02240"
+                 tabIndex="-1" value=""/>
+        </div>
+        <Button type="submit" className="ml-4 flex-none" name="subscribe" id="mc-embedded-subscribe">
           Join
         </Button>
       </div>
     </form>
-  )
+)
 }
 
 function Resume() {
@@ -286,7 +301,7 @@ export default function Home({ articles }) {
               <Article key={article.slug} article={article} />
             ))}
           </div>
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
+          <div className="space-y-10 lg:pl-16 xl:pl-24"  id="newsletter">
             <Newsletter />
             <Resume />
           </div>
